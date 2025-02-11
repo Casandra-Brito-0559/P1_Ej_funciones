@@ -1,26 +1,36 @@
+import 'dart:io';
+
+// Función para capturar los datos de la lista
+List<int> capturarDatos() {
+  List<int> lista = [];
+  print("Ingrese la cantidad de números que desea agregar a la lista:");
+  int cantidad = int.parse(stdin.readLineSync()!);
+
+  for (int i = 0; i < cantidad; i++) {
+    print("Ingrese el número ${i + 1}:");
+    int numero = int.parse(stdin.readLineSync()!);
+    lista.add(numero);
+  }
+
+  return lista;
+}
+
+// Función para mostrar los elementos de la lista
+void mostrarElementos(List<int> lista) {
+  print('Casandra Brito Gomez mat: 22308051280559');
+  print("Lista ordenada de menor a mayor:");
+  for (int numero in lista) {
+    print(numero);
+  }
+}
+
 void main() {
-  // Capturar la lista de números
-  List<int> lista = capturarL();
+  // Capturar los datos de la lista
+  List<int> lista = capturarDatos();
 
   // Ordenar la lista de menor a mayor
   lista.sort();
 
-  // Mostrar la lista ordenada
-  mostrarL(lista);
-}
-
-// Función para capturar la lista de números
-List<int> capturarL() {
-  // Lista predefinida de números enteros
-  return [34, 7, 23, 32, 5, 62];
-}
-
-// Función para mostrar la lista
-void mostrarL(List<int> lista) {
-  print('Casandra Brito Gomez Mat: 22308051280559');
-  print("Lista ordenada de menor a mayor:");
-  for (int numero in lista) {
-    print(numero);
-    
-  }
+  // Mostrar los elementos de la lista ordenada
+  mostrarElementos(lista);
 }
