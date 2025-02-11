@@ -17,8 +17,10 @@ List<int> capturarL() {
 
 // Función para mostrar la lista
 void mostrarL(List<int> lista) {
+  print('Casandra Brito Gomez Mat: 22308051280559');
   print("Lista ordenada de menor a mayor:");
   for (int numero in lista) {
     print(numero);
+    
   }
 }
