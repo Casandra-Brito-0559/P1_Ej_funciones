@@ -16,9 +16,8 @@ void main() {
   };
 
   // Acceder a los valores del mapa
-  print('El mes 1 es: ${mesesDelAnio[1]}'); // Enero
-  print('El mes 12 es: ${mesesDelAnio[12]}'); // Diciembre
-
+ int numeroMes = 5;
+print('El mes número $numeroMes es: ${mesesDelAnio[numeroMes]}');
   // Recorrer el mapa e imprimir todos los pares clave-valor
   //usando el método forEach()
   print('\nMeses del año:');
